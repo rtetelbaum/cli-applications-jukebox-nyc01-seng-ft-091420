@@ -13,7 +13,7 @@ def play(songs)
   input = gets.strip
   songs.each_with_index do |song, index|
     if input == (index + 1).to_s || input == song
-      puts "Playing #{track[:song]}"
+      puts "Playing #{song}"
     else
       puts "Invalid input, please try again"
     end
