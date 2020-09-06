@@ -17,11 +17,11 @@ def help
   puts "- exit : exits this program"
 end
 
-def play(songs)
-  puts "Please enter a song name or number:"
-  input = gets.strip
+# def play(songs)
+#   puts "Please enter a song name or number:"
+#   input = gets.strip
    
-end
+# end
 
 def list(songs)
   song_array = []
