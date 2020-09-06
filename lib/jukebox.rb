@@ -11,12 +11,14 @@ end
 def play(songs)
   puts "Please enter a song name or number:"
   input = gets.strip
+  song_exists = false
   songs.each_with_index do |song, index|
-    puts "Playing #{song}" if input == (index + 1).to_s || input == song
+    if input == (index + 1).to_s || input == song
+    puts "Playing #{song}"
+    song_exists =  true
+    end
   end
-  songs.each_with_index do |song, index|
-    puts "Invalid input, please try again" if input != (index + 1).to_s && input != song
-  end
+  puts "Invalid input, please try again" if !song_exists
 end
 
 def list(songs)
