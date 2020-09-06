@@ -22,7 +22,7 @@ def play(songs)
   songs_list_helper(songs).each do |track|
     
     binding.pry
-    if input == number.to_s || input == name
+    if input == track[:number].to_s || input == name
       puts "Playing #{name}"
     else
       puts "Invalid input, please try again"
