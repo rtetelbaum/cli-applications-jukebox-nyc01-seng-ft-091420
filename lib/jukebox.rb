@@ -36,4 +36,6 @@ def run(songs)
   input = gets.strip
   exit_jukebox if input == "exit"
   help if input == "help"
+  list(songs) if input == "songs"
+  
 end
