@@ -1,3 +1,5 @@
+require 'pry'
+
 # def say_hello(name)
 #   "Hi #{name}!"
 # end
@@ -27,5 +29,6 @@ def list(songs)
     puts "#{index + 1}. #{songs[index]}"
     song_array[index] = {:number => index + 1, :song => song}
   end
+  binding.pry
   return song_array
 end
