@@ -22,8 +22,9 @@ def play(songs)
 end
 
 def list(songs)
-
+  song_hash = {}
   songs.each_with_index do |song, index|
     puts "#{index + 1}. #{songs[index]}"
+    
   end
 end
