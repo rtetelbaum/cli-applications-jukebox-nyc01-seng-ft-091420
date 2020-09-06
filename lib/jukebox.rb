@@ -24,7 +24,7 @@ def play(songs)
     if input == number.to_s || input == name
       puts "Playing #{name}"
     else
-      puts 
+      puts "Invalid input, please try again"
   end
 end
 
