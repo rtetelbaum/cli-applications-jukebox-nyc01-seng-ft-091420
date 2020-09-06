@@ -22,9 +22,10 @@ def play(songs)
 end
 
 def list(songs)
-  song_hash = {}
+  song_array = []
   songs.each_with_index do |song, index|
     puts "#{index + 1}. #{songs[index]}"
-    
+    song_array[index] = {:number => index + 1, :song => song}
   end
+  return song_array
 end
