@@ -19,8 +19,8 @@ end
 def play(songs)
   puts "Please enter a song name or number:"
   input = gets.strip
-  list = songs_list_helper(songs)
-  list.each do |number, name|
+  #list = songs_list_helper(songs)
+  songs_list_helper(songs).each do |number, name|
     binding.pry
     if input == number.to_s || input == name
       puts "Playing #{name}"
