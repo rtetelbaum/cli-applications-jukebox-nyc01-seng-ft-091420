@@ -17,11 +17,11 @@ def help
   puts "- exit : exits this program"
 end
 
-# def play(songs)
-#   puts "Please enter a song name or number:"
-#   input = gets.strip
+def play(songs)
+  puts "Please enter a song name or number:"
+  input = gets.strip
    
-# end
+end
 
 def list(songs)
   song_array = []
@@ -29,6 +29,5 @@ def list(songs)
     puts "#{index + 1}. #{songs[index]}"
     song_array[index] = {:number => index + 1, :song => song}
   end
-  binding.pry
-  return song_array
+  song_array
 end
