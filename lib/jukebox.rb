@@ -38,5 +38,4 @@ def run(songs)
   help if input == "help"
   list(songs) if input == "list"
   play(songs) if input == "play"
-  
 end
