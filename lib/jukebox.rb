@@ -1,13 +1,12 @@
 require 'pry'
 
-# def say_hello(name)
-#   "Hi #{name}!"
-# end
- 
-# puts "Enter your name:"
-# users_name = gets.strip
- 
-# puts say_hello(users_name)
+def songs_list_helper(songs)
+  songs_list = []
+  songs.each_with_index do |song, index|
+    songs_list[index] = {:number => index + 1, :song => song}
+  end
+  songs_list
+end
 
 def help
   puts "I accept the following commands:"
@@ -20,14 +19,11 @@ end
 def play(songs)
   puts "Please enter a song name or number:"
   input = gets.strip
-   
+  list_
 end
 
 def list(songs)
-  song_array = []
   songs.each_with_index do |song, index|
     puts "#{index + 1}. #{songs[index]}"
-    song_array[index] = {:number => index + 1, :song => song}
   end
-  song_array
 end
