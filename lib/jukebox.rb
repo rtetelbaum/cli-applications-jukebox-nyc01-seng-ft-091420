@@ -15,7 +15,8 @@ def play(songs)
   songs.each_with_index do |song, index|
     numbered_list[index] = {:number => index + 1, :song => song}
   end
-  songs_list_helper(songs).each do |track|
+  numbered_list.each do |track|
+    binding.pry
     if input == track[:number].to_s || input == track[:song]
       puts "Playing #{track[:song]}"
     else
