@@ -19,13 +19,14 @@ end
 def play(songs)
   puts "Please enter a song name or number:"
   input = gets.strip
-  songs_list_helper(songs).each do |track|
-    if input == track[:number].to_s || input == track[:song]
-      puts "Playing #{track[:song]}"
-    else
-      puts "Invalid input, please try again"
+  songs.each_with_index do |song, index|
+    songs_list_helper(songs).each do |track|
+      if input == track[:number].to_s || input == track[:song]
+        puts "Playing #{track[:song]}"
+      else
+        puts "Invalid input, please try again"
+      end
     end
-  end
 end
 
 def list(songs)
