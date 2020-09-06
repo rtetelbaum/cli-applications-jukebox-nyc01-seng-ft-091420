@@ -39,5 +39,6 @@ puts "Please enter a command:"
   help if input == "help"
   list(songs) if input == "list"
   play(songs) if input == "play"
+  break if 
   end
 end
