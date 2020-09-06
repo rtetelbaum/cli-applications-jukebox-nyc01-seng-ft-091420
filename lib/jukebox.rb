@@ -22,13 +22,8 @@ def play(songs)
 end
 
 def list(songs)
-  index = 0
-  while index < songs.length do
-    puts "#{index + 1}. #{songs[index]}"
-    index += 1
-  end
-  
+
   songs.each_with_index do |song, index|
-    
+    puts "#{index + 1}. #{songs[index]}"
   end
 end
