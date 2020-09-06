@@ -27,4 +27,8 @@ def list(songs)
     puts "#{index + 1}. #{songs[index]}"
     index += 1
   end
+  
+  songs.each_with_index do ||
+    
+  end
 end
