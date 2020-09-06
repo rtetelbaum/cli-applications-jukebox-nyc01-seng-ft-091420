@@ -1,13 +1,5 @@
 require 'pry'
 
-def songs_list_helper(songs)
-  songs_list = []
-  songs.each_with_index do |song, index|
-    songs_list[index] = {:number => index + 1, :song => song}
-  end
-  songs_list
-end
-
 def help
   puts "I accept the following commands:"
   puts "- help : displays this help message"
@@ -19,8 +11,9 @@ end
 def play(songs)
   puts "Please enter a song name or number:"
   input = gets.strip
+  numbered_list = []
   songs.each_with_index do |song, index|
-    
+    numbered_list[index] = {:number => index + 1, :song => song}
   end
   songs_list_helper(songs).each do |track|
     if input == track[:number].to_s || input == track[:song]
