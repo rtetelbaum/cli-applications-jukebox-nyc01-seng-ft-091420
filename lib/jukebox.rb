@@ -19,7 +19,7 @@ end
 def play(songs)
   puts "Please enter a song name or number:"
   input = gets.strip
-  list_
+  songs_list_helper(songs)
 end
 
 def list(songs)
