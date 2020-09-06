@@ -18,7 +18,7 @@ def play(songs)
   numbered_list.each do |track|
     if input == track[:number].to_s || input == track[:song]
       puts "Playing #{track[:song]}"
-    else
+    elsif input != track[:number].to_s && input != track[:song]
       puts "Invalid input, please try again"
     end
   end
