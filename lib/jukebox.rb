@@ -26,3 +26,7 @@ def list(songs)
     puts "#{index + 1}. #{songs[index]}"
   end
 end
+
+def exit_jukebox
+  puts "Goodbye"
+end
