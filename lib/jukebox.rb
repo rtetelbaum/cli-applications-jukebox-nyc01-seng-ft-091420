@@ -21,7 +21,7 @@ def play(songs)
   input = gets.strip
   songs_list_helper(songs).each do |track|
     if input == track[:number].to_s || input == track[:song]
-      puts "Playing #{name}"
+      puts "Playing #{track[:song]}"
     else
       puts "Invalid input, please try again"
     end
